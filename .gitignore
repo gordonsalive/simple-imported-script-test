@@ -59,3 +59,21 @@ typings/
 
 # next.js build output
 .next
+
+# production
+/build
+
+# my stuff
+# intellij
+.idea
+# sass is creating css from scss, so ignore css
+# src/**/*.css
+# ignore any data, that get produced by running the scripts, mock data exists for testing
+# **/data/*
+# ignore any logs
+**/logs/*
+*status.json
+# ignore lock files if they exists
+*.lock
+*lock.json
+
