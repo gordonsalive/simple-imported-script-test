@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "env": {
+    "node": true,
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/project/**/*.js",
+          "**/__tests__/**/*.js",
+          "**/__mocks__/**/*.js"
+        ]
+      }
+    ],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "no-param-reassign": ["error", { "props": false }],
+    "linebreak-style": ["off", "unix"]
+  }
+}

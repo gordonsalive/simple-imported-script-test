@@ -1,20 +1,18 @@
-//very simple poc script to console log messages and give me something to 'test'
+// very simple poc script to console log messages and give me something to 'test'
 
-"use strict";
-
-let console_hello_plain = {};
+const consoleHelloPlain = {};
 
 (function ConsoleHello(consoleHello) {
-    consoleHello.hello = "hello";
-    consoleHello.constructSayHello = function(who) {
-        who = who ? who : "you";
-        return `Hello there ${who}!`;
-    }
-    consoleHello.sayHello = function(who) {
-        let helloMessage = this.constructSayHello(who);
-        console.log(helloMessage);
-    }
-}(console_hello_plain.ConsoleHello = console_hello_plain.ConsoleHello || {}));
+  consoleHello.hello = 'hello';
+  consoleHello.constructSayHello = function constructSayHello(who) {
+    const who2 = who || 'you';
+    return `Hello there ${who2}!`;
+  };
+  consoleHello.sayHello = function sayHello(who) {
+    const helloMessage = consoleHello.constructSayHello(who);
+    console.log(helloMessage);
+  };
+}(consoleHelloPlain.ConsoleHello = consoleHelloPlain.ConsoleHello || {}));
 
-module.exports.console_hello_plain = console_hello_plain;
-//export default result;
+module.exports.console_hello_plain = consoleHelloPlain;
+// export default result;

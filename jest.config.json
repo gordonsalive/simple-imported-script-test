@@ -1,0 +1,37 @@
+{
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
+  "collectCoverageFrom": [
+    "<rootDir>/public/**/*.js",
+    "!**/__tests__/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "projects": [
+    {
+      "displayName": "test/site",
+      "clearMocks": true,
+      "testEnvironment": "jsdom",
+      "rootDir": "./",
+      "setupFiles": [
+        "<rootDir>/__tests__/test.setup.js"
+      ],
+      "testMatch": [
+        "<rootDir>/__tests__/*.spec.js"
+      ]
+    },
+    {
+      "runner": "jest-runner-eslint",
+      "displayName": "lint",
+      "testMatch": [
+        "<rootDir>/public/**/*.js"
+      ]
+    }
+  ]
+}
