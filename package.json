@@ -16,7 +16,7 @@
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.23.4",
     "express": "4.17.1",
-    "http-errors": "1.8.0",
+    "http-errors": "1.8.1",
     "jade": "1.11.0",
     "jest": "27.0.6",
     "jest-runner-eslint": "0.10.1",
