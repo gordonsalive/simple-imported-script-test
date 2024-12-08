@@ -17,7 +17,7 @@
     "eslint-plugin-import": "2.23.4",
     "express": "4.17.1",
     "http-errors": "1.8.0",
-    "jade": "1.11.0",
+    "pug": "2.0.0",
     "jest": "27.0.6",
     "jest-runner-eslint": "0.10.1",
     "morgan": "1.10.0"
